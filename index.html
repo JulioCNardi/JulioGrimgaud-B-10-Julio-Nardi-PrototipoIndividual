@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Site feito no Firefox -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap V5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Meus CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+    <title>Dimension Móveis</title>
+</head>
+
+<body>
+    <!-- Topo da Pagina Menu + Navbar -->
+    <header class="topo fixed-top row">
+        <!-- Topo da Pagina -->
+        <div class="px-3 py-4 container-lg d-flex col-10">
+            <div>
+                <i class=" fas fa-couch text-white my-2 fs-1"></i>
+                <h1 class="text-white mt-3 mx-3 fs-3 d-lg-inline-flex align-top">Dimension Móveis</h1>
+            </div>
+            <div class="topus col-8">
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <form class="d-flex col-12">
+                            <input class="pesquisar form-control" type="search" placeholder="Pesquisar"
+                                aria-label="Search">
+                            <a href="#"><i class="fas fa-shopping-cart  my-1 mx-3 fs-3 text-white 4"></i></a>
+                            <a class="btn text-white" href="#">Entrar</a>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <div class="navbor col-12">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Todos os Departamentos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Camas</a>
+                                <a class="dropdown-item" href="#">Sofás</a>
+                                <a class="dropdown-item" href="#">Cadeiras</a>
+                                <a class="dropdown-item" href="#">Mesas</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#">Populares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="#">Recomendados para você</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Carrousel Slider -->
+        <section class="carrousel row">
+            <div id="meu_carousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#meu_carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#meu_carousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#meu_carousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!-- Conteudo Carrousel -->
+                <div class="carousel-inner col-10">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption col-5">
+                            <h2 class="fs-3">Promoção em móveis para quarto: 20% OFF</h2>
+                        </div>
+                        <img src="img/slide1.jpg" class="d-block rounded mx-auto float" alt="..." height="50%"
+                            width="84%">
+                    </div>
+
+                    <div class="carousel-item col-10">
+                        <div class="carousel-caption col-5">
+                            <h2 class="fs-3">Promoção em móveis para Cozinha: 10% OFF</h2>
+                        </div>
+                        <img src="img/slide2.jpg" class="d-block rounded mx-auto" alt="..." height="50%" width="84%">
+                    </div>
+
+                    <div class="carousel-item col-10">
+                        <div class="carousel-caption col-5">
+                            <h2 class="fs-3">Promoção em cadeiras: 15% OFF</h2>
+                        </div>
+                        <img src="img/slide3.jpg" class="d-block rounded mx-auto" alt="..." height="50%" width="84%">
+                    </div>
+                </div>
+                <!-- Botões de Ida e Volta Carrousel -->
+                <button class="carousel-control-prev mx-5" type="button" data-bs-target="#meu_carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next mx-5" type="button" data-bs-target="#meu_carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Card produtos -->
+        <section class="produtos row">
+            <div class="row row-cols-1 row-cols-md-4">
+
+                <a href="#">
+                    <div class="col-10">
+                        <div class="card col-10">
+                            <img class="card-img-top" src="img/cadeiras.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                                <h2 class="text-white fs-4  text-center">Cadeiras</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="col-10">
+                        <div class="card col-10">
+                            <img class="card-img-top" src="img/camas.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                                <h2 class="text-white fs-4  text-center">Camas</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="col-10">
+                        <div class="card col-10">
+                            <img class="card-img-top" src="img/mesas.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                                <h2 class="text-white fs-4 text-center">Mesas</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="col-10">
+                        <div class="card col-10">
+                            <img class="card-img-top" src="img/banheiro.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                                <h2 class="text-white fs-4 text-center">Banheiro</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Quem Somos -->
+        <section class="quemSomos row justify-content-center">
+            <h2 class="fs-2 text-center">Quem somos?</h2>
+            <div class="col-8">
+                <h3 class="mt-3 fs-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
+                    metus malesuada, auctor ante a, pharetra diam. Aenean sodales mi nisl. Curabitur vitae tincidunt
+                    lorem. Aenean risus dolor, sodales vitae eros posuere, ultrices mollis nisi. Curabitur sit amet
+                    porttitor augue. Proin mollis nibh urna, tempus sollicitudin nulla fermentum in. In in pulvinar
+                    eros.</h3>
+            </div>
+        </section>
+
+        <!-- Nossas Lojas -->
+        <section class="nossasLojas row justify-content-center">
+
+            <div class="col-11 d-lg-inline-flex justify-content-center">
+                <div class="col-6">
+                    <h2 class="fs-2 mt-5 text-white text-center">Nossas Lojas</h2>
+                    <h3 class="mt-3 fs-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec et metus malesuada, auctor ante a, pharetra diam. Aenean sodales mi nisl. Curabitur vitae
+                        tincidunt lorem.</h3>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown show">
+                        <a class="btn mt-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Escolha sua cidade
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Videira</a>
+                            <a class="dropdown-item" href="#">Caçador</a>
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=m%C3%B3veis&t=&z=17&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                            <a href="https://123movies-to.org"></a>
+                            <br>
+                            <a href="https://www.embedgooglemap.net">embed a google map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <div class="px-3 py-2 container-lg d-flex col-12">
+            <div class="d-flex">
+            <i class="fab fa-facebook-square text-white fs-1"></i>
+            <i class="fab fa-twitter text-white fs-1"></i>
+            <i class="fab fa-youtube text-white fs-1"></i>
+            <i class="fab fa-instagram text-white fs-1"></i>
+            </div>
+            <div class="d-flex">
+            <h2 class="text-white mt-2 fs-4 d-lg-inline-flex">Dimension Móveis</h1>
+            <h3 class="text-white mt-2 fs-4 d-lg-inline-flex" style="margin-left: 27em;">Ohayo@MochiMochi.com</h1>
+            </div>
+            </div>
+            <div class="px-3 container-lg d-flex col-12">
+            <div class="d-flex">
+                <h2 class="text-white mt-2 fs-6 d-lg-inline-flex">Todos direitos reservados.</h1>
+                <h3 class="text-white mt-2 fs-6 d-lg-inline-flex text-right" style="margin-left: 49.5em;">(41) 6009-2712</h1>  
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
