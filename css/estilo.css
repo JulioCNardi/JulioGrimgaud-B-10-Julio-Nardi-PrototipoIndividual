@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo {
+    position: absolute;
+    height: 6.5rem;
+    background-color: #FEA501;
+}
+
+.topo h1 {
+    font-weight: bold;
+    font-family: 'PT Sans';
+}
+
+.topus a {
+    font-weight: 550;
+}
+
+
+.pesquisar {
+    border-radius: 5rem;
+}
+
+.navbor {
+
+background-color: #FF7F50;
+}
+
+.navbor nav {
+    margin-left: 8%;
+    font-weight: 400;
+}
+
+.carrousel {
+    margin-top: 12em;
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    margin-left: 8%;
+    align-content: center;
+    bottom: auto;
+    background-color: #FF7F50;
+    border-radius:2px;
+}
+
+.carousel h1 {
+    font-family: 'PT Sans';
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 15px; /* change width */
+    height: 15px; /* change height */
+    background-color: #FEA501;
+    border-radius: 100%;
+    transition: .6s ease;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
+
+.produtos {
+    margin-top: 3em;
+    margin-left: 6.4em;
+    margin-right: 1.4em;
+}
+
+.produtos .card {
+    width: 15rem;
+    overflow: hidden;
+    border: 0;
+    border-radius: 10%;
+    background: #FEA501;
+}
+
+.produtos button {
+    text-decoration: none;
+}
+
+.produtos img {
+    object-fit: cover;
+   opacity: 0.65;
+}
+
+.quemSomos {
+    margin-top: 3em;
+}
+
+.quemSomos h2 {
+    font-weight: bolder;
+    font-family: 'PT Sans';
+    color:#FEA501
+}
+
+.quemSomos {
+    align-content: center;
+}
+
+.nossasLojas {
+    margin-top: 3em;
+    padding-top: 4em;
+    height: 30rem;
+    background-color: #FEA501;
+}
+
+.nossasLojas h2 {
+    font-weight: bolder;
+    font-family: 'PT Sans';
+}
+
+.nossasLojas h3 {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.nossasLojas .dropdown {
+    margin-left: 14.8em;
+    margin-right: 14.8em;
+}
+
+.nossasLojas .dropdown a {
+    background-color: white;
+    border-radius: 5rem;
+}
+
+.nossasLojas iframe {
+    height: 23em;
+    width: 38em;
+    border-radius: 5%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 23em;
+    width: 38em;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 23em;
+    width: 38em;
+}
+
+footer {
+    background-color: #FF7F50;
+}
+
+
